@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html style="background: tomato;">
+    <head>
+        <title>Etch-A-Sketch</title>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id ="topContainer">
+            Etch-A-Sketch
+        </div>
+        <div id="flex">
+            <div id="leftColumn">
+                <button id = "classic">Classic Mode</button>
+                <button id = "rainbow">6ix9ine Mode</button>
+                <button id = "eraser">Eraser</button>
+                <button id = "clearBtn">Clear</button>
+                <div class = "slidecontainer">
+                    <p>Grid: <span id="slideText"></span></p>
+                    <input type="range" min="1" max="100" value="10" class="slider"
+                    id = "myRange" oninput="sliderChange(this.value)">
+                </div>
+            </div>
+            <div id="container">    
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+    <footer>
+        Copyright 2021 Astaver 
+        <i class="fa fa-github" style="font-size:36px"> </i>
+    </footer>
+</html>
